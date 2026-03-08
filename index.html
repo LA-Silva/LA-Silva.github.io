@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Flat-File CMS</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="links" id="navLinks"></div>
+        <div class="nav-right">
+            <button id="themeToggle" onclick="toggleDarkMode()">Dark Mode</button>
+            <input type="text" id="searchBox" placeholder="Search..." onkeyup="performSearch()">
+            <span id="authButtonContainer"></span>
+        </div>
+    </nav>
+
+    <div id="content">Loading...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
